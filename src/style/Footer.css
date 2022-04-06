@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+
+    padding: 30px;
+}
+.footer > .footer__links {
+    margin: auto;
+}
+.footer > .footer__links > a {
+    color: #5c5e62;
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    padding: 7px;
+}

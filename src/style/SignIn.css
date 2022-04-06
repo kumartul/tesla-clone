@@ -1,0 +1,169 @@
+.signIn {
+    height: 100vh;
+
+    overflow: hidden;
+}
+.signIn > .container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn > .container > .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.signIn > .container > .form-group > h2 {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+    margin-left: -10px;
+}
+
+.signIn > .container > .form-group > label {
+    color: #5c5d61;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.signIn > .container > .form-group > input {
+    color: #393c41;
+    font-size: 14px;
+    font-weight: bold;
+
+    width: 25vw;
+
+    line-height: 1.414;
+
+    background-color: #f5f5f5;
+
+    border: 1px solid #f5f5f5;
+    border-radius: 20px;
+    
+    outline: none;
+
+    padding: 7px 20px;
+
+    transition: all 0.25s ease;
+}
+.signIn > .container > .form-group > input:first-of-type {
+    margin-bottom: 20px;
+}
+.signIn > .container > .form-group > input:focus {
+    border-color: #d0d1d2;
+}
+
+.signIn > .container > .form-group > button {
+    width: 25vw;
+
+    margin: 20px 0;
+
+    text-transform: uppercase;
+
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 10px;
+    
+    background-color: #3d69e1;
+    
+    border: none;
+    border-radius: 20px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+.signIn > .container > .form-group > button:hover {
+    background-color: #3457b2;
+}
+
+.signIn .otherLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signIn .otherLinks p {
+    color: #393c41;
+    font-size: 12px;
+    line-height: 1.2rem;
+}
+.signIn .otherLinks span {
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+.signIn .otherLinks .divider {
+    display: inline-block;
+
+    margin: 0 10px;
+}
+
+.signIn .line-break {
+    color: #5c5d61;
+
+    text-transform: uppercase;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 40px auto;
+
+    width: 25%;
+    
+    white-space: nowrap;
+}
+.signIn .line-break::before,
+.signIn .line-break::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    margin: 0 8px;
+    background-color: #e2e4e4;
+}
+
+.signIn > .container > a > button {
+    background-color: white;
+
+    color: #181b21;
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    padding: 8px 20px;
+
+    border: 3px solid #181b21;
+    border-radius: 20px;
+
+    width: 25vw;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+.signIn > .container > a > button:hover {
+    color: white;
+
+    background-color: #181b21;
+}
+
+.signIn > .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

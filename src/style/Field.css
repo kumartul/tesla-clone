@@ -1,0 +1,67 @@
+.field {
+    display: flex;
+    flex-direction: column;
+}
+.field > h3 {
+    color: #5c5d61;
+    font-size: 14px;
+}
+.field > h4 {
+    color: #181b21;
+    font-size: 14px;
+}
+.field > button:not(.addNew) {
+    color: #393c41;
+
+    text-decoration: underline;
+
+    letter-spacing: 1px;
+    
+    background: none;
+    
+    border: none;
+    
+    width: fit-content;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+.field > button:not(.addNew):hover {
+    text-decoration-thickness: 2px;
+}
+
+.field > .addNew {
+    color: #393c41;
+
+    letter-spacing: 1px;
+    
+    background: none;
+    
+    border: none;
+    
+    width: fit-content;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+.field > .addNew > span:first-of-type {
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+
+    background: #ededed;
+
+    border-radius: 50%;
+
+    padding: 5px 8px;
+    margin-right: 10px;
+}
+.field > .addNew > span:last-of-type {
+
+}
+.field > .addNew > span:last-of-type:hover {
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+}

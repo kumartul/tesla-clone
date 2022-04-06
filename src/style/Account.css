@@ -1,0 +1,26 @@
+.account .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.account > .container {
+    margin-top: 100px;
+
+    display: flex;
+}
+.account > .container > .content {
+    font-size: 25px;
+}
+.account > .container > .content {
+    width: 100%;
+    position: relative;
+}
+.account > .container > .content > .fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    padding: 20px 0;
+}

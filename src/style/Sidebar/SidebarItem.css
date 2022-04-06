@@ -1,0 +1,26 @@
+.sidebarItem {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    cursor: pointer;
+}
+.sidebarItem > img {
+    height: 30px;
+    width: 30px;
+}
+.sidebarItem > h3 {
+    color: #5c5d61;
+    font-size: 18px;
+    font-weight: bold;
+
+    line-height: 34px;
+
+    margin-left: 15px;
+    
+    transition: all 0.2s ease;
+}
+.sidebarItem > h3:hover {
+    color: #000;
+}

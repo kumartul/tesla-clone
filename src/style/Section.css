@@ -1,0 +1,99 @@
+.section {
+    width: 100vw;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 110px 0;
+
+    position: relative;
+}
+
+.section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
+.section__header {
+    text-align: center;
+}
+.section__header > h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.section__header > h3 {
+    font-size: 15px;
+    font-weight: normal;
+
+    margin-top: 10px;
+}
+
+.section__btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.section__btnContainer .section__btn {
+    min-width: 256px;
+    height: 40px;
+
+    border: none;
+    border-radius: 25px;
+    
+    background-color: #fff;
+
+    backdrop-filter: blur(8px);
+
+    color: #000;
+
+    text-transform: uppercase;
+    
+    cursor: pointer;
+}
+
+.section__btnContainer .section__btnLeft {
+    color: white;
+
+    background-color: rgba(23, 26, 32, 0.75);
+}
+
+.section__btnContainer .section__btnRight {
+    background-color: rgba(244, 244, 244, 0.65);
+
+    margin-left: 20px;
+}
+
+.section__downArrow > img {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    bottom: 20px;
+
+    cursor: pointer;
+
+    animation-name: arrowDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes arrowDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
