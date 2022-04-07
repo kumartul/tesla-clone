@@ -15,6 +15,8 @@ import accessoriesImage from '../images/accessories.jpg';
 import '../style/Home.css';
 
 const Home = () => {
+    document.title = 'Electric Cars, Solar & Clean Energy | Tesla';
+    
     return (
         <div className="home">
             <Navbar />

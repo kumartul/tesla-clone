@@ -14,6 +14,7 @@
 }
 .account > .container > .content {
     width: 100%;
+
     position: relative;
 }
 .account > .container > .content > .fields {
@@ -23,4 +24,30 @@
     grid-gap: 10px;
 
     padding: 20px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .account > .container > .content {
+        padding: 50px;
+    }
+    .account .footer {
+        position: static;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .account > .container > .content > .fields {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 420px) {
+    .account > .container > .content > .fields {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .account > .container > .content > .fields > .field {
+        background-color: #ededed;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }

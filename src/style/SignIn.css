@@ -1,15 +1,10 @@
-.signIn {
-    height: 100vh;
-
-    overflow: hidden;
-}
 .signIn > .container {
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 100px 0;
 }
 
 .signIn > .container > .form-group {
@@ -40,7 +35,8 @@
     font-size: 14px;
     font-weight: bold;
 
-    width: 25vw;
+    width: 350px;
+    min-width: 350px;
 
     line-height: 1.414;
 
@@ -63,7 +59,8 @@
 }
 
 .signIn > .container > .form-group > button {
-    width: 25vw;
+    width: 350px;
+    min-width: 350px;
 
     margin: 20px 0;
 
@@ -149,7 +146,8 @@
     border: 3px solid #181b21;
     border-radius: 20px;
 
-    width: 25vw;
+    width: 350px;
+    min-width: 350px;
 
     cursor: pointer;
 
@@ -161,9 +159,11 @@
     background-color: #181b21;
 }
 
-.signIn > .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+@media only screen and (max-width: 400px) {
+    .signIn > .container > .form-group > input,
+    .signIn > .container > .form-group > button,
+    .signIn > .container > a > button {
+        width: 100%;
+        min-width: 240px;
+    }
 }

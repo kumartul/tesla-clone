@@ -4,3 +4,9 @@
 
     width: 30%;
 }
+
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+}
